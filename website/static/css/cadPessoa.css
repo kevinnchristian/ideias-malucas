@@ -1,0 +1,67 @@
+.pagina_cadPessoa{
+    background-color: #374083e7;
+    font-family: 'Neucha', cursive;
+    font-size: 15pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 95vh;
+    width: 24vw;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.pagina_cadPessoa h1{
+    font-family: 'Neucha', cursive;
+    font-size: 25pt;
+}
+
+.pagina_cadPessoa button{
+    background-color: #0CE895;
+    border-color: #0CE895;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Neucha', cursive;
+    font-size: 13pt;
+    height: 5vh;
+    width: 8vw;
+    margin-top: 4px;
+}
+
+.pagina_cadPessoa button:hover{
+    cursor: pointer;
+    background-color: #8186FF;
+    border-color: #8186FF;
+}
+
+.pagina_cadPessoa form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pagina_cadPessoa form input{
+    border-radius: 5px;
+    width: 20vw;
+    height: 3vh;
+    margin-bottom: 5px;
+}
+
+.pagina_cadPessoa form textarea{
+    border-radius: 5px;
+}
+
+.pagina_cadPessoa form select{
+    border-radius: 5px;
+    width: 6vw;
+    height: 4vh;
+    margin-bottom: 5px;
+}
+
+.posicao_botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+}

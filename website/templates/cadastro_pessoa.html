@@ -1,0 +1,38 @@
+{% extends 'shared/layout.html' %}
+
+{% block conteudo %}
+
+<div class="pagina_cadPessoa">
+    <h2>Cadastre-se:</h2>
+    <form action="/cadastro_pessoa" method="post">
+        {% csrf_token %}
+        <label>Nome:</label>
+        <input type="text" name="nome" required>
+
+        <label>Sobrenome:</label>
+        <input type="text" name="sobrenome" required>
+
+        <label>E-mail:</label>
+        <input type="email" name="email" required>
+
+        <label>Senha:</label>
+        <input type="password" name="senha" autocomplete="current-password" required>
+
+        <label>Gênero:</label>
+        <select name="genero" required>
+            <option value="F">Feminino</option>
+            <option value="M">Masculino</option>
+            <option value="O">Outro</option>
+        </select>
+
+        <label>Biografia:</label>
+        <textarea name="biografia" cols="30" rows="10"></textarea>
+
+        <div class="posicao_botao">
+            <button type="submit">Cadastrar</button>
+        </div>
+        
+    </form>
+</div>
+
+{% endblock %}

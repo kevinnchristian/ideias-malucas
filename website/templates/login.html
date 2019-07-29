@@ -1,0 +1,23 @@
+{% extends 'shared/layout.html' %}
+
+{% block conteudo %}
+
+<div class="pagina_login">
+
+    <h1>Acesse:</h1>
+
+    <form action="/lista_ideias" method="post">
+        {% csrf_token %}
+        <div class="campos_login">
+            <input type="email" name="email" placeholder="Digite seu email">
+            <input type="password" autocomplete="current-password" placeholder="Digite sua senha">
+            {{args}}
+            <button type="submit">Entrar</button>
+        </div>
+    </form>
+
+    <button onclick="window.location.href='/';">Página Inicial</button>
+    
+</div>
+
+{% endblock %}

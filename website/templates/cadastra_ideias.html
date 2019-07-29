@@ -1,0 +1,44 @@
+{% extends 'shared/layout.html' %}
+
+{% block conteudo %}
+
+<div class="pagina_cadIdeias">
+
+    <h2>Cadastre a sua ideia {{pessoa.nome}}</h2>
+
+    {% if pessoa is None %}
+    <p>Ops, você precisa se cadastrar <a href="/cadastro_pessoa" style="color:white">clique aqui!!!</a></p>
+    {% else %}
+    <form action="/cadastra_ideias" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="email" value="{{pessoa.email}}">
+
+        <label for="">Título:</label>
+        <input type="text" name="titulo" placeholder="Nome da ideia">
+
+        <label for="descricao">Descreva sua ideia:</label>
+        <textarea name="descricao" cols="30" rows="10"></textarea>
+
+        <label for="">Selecione a categoria:</label>
+        <select name="categorias">
+            <option value="ESPORTE_RADICAL">Esporte Radical</option>
+            <option value="DESAFIANDO_A_FISICA">Desafiando a Física</option>
+            <option value="ACELERE_AO_MAXIMO">Extraia o Máximo de Potência do seu Motor!!!</option>
+            <option value="PUBLICAS">Públicas</option>
+            <option value="OUTROS">Outros</option>
+        </select>
+
+        <input type="text" name="categoria_outros" placeholder="Caso outros, qual?">
+
+        <div class="posicao_bcad">
+            <button type="submit">Cadastrar Ideia</button>
+        </div>
+    </form>
+
+    <div class="posicao_bsair">
+        <button onclick="window.location.href='/';">Sair</button>
+    </div>
+
+</div>
+{% endif %}
+{% endblock %}

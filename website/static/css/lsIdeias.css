@@ -1,0 +1,33 @@
+.pagina_lsIdeias{
+    background-color: #374083e7;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 40vw;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.pagina_lsIdeias h1{
+    font-family: 'Neucha', cursive;
+    font-size: 25pt;
+    margin-top: 20px;
+}
+
+.pagina_lsIdeias button{
+    background-color: #0CE895;
+    border-color: #0CE895;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Neucha', cursive;
+    font-size: 13pt;
+    height: 5vh;
+    width: 8vw;
+}
+
+.pagina_lsIdeias button:hover{
+    cursor: pointer;
+    background-color: #8186FF;
+    border-color: #8186FF;
+}

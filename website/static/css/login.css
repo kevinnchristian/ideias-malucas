@@ -1,0 +1,50 @@
+.pagina_login{
+    background-color: #374083e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 25vw;
+    border-radius: 8px;
+    margin-top: 150px;
+}
+
+.pagina_login h1{
+    font-family: 'Neucha', cursive;
+    font-size: 25pt;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.pagina_login button{
+    background-color: #0CE895;
+    border-color: #0CE895;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Neucha', cursive;
+    font-size: 13pt;
+    height: 5vh;
+    width: 8vw;
+    margin-top: 4px;
+}
+
+.pagina_login button:hover{
+    cursor: pointer;
+    background-color: #8186FF;
+    border-color: #8186FF;
+}
+
+.campos_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.campos_login input{
+    border-radius: 4px;
+    width: 20vw;
+    height: 4vh;
+    margin-bottom: 5px;
+}

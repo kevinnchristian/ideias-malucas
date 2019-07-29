@@ -1,0 +1,26 @@
+{% extends 'shared/layout.html' %}
+
+{% block conteudo %}
+
+<div class="pagina_lsIdeias">
+
+    <h1>Lista das Ideias Cadastradas</h1>
+
+    {% for i in ideia %}
+    <ul>
+        <li>
+            {{ideia.pessoa}}
+            {{ideia.titulo}}
+            {{ideia.descricao}}
+        </li>
+        <hr>
+    </ul>
+    {% endfor %}
+    <form action="/cadastra_ideias">
+        <button type="submit">Cadastre Ideia</button>
+    </form>
+    <button onclick="window.location.href='/';">Sair</button>
+</div>
+
+
+{% endblock %}

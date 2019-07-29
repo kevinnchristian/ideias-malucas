@@ -1,0 +1,55 @@
+body{
+    background-image: url(/static/img/fundo.jpg);
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.pagina_inicial{
+    background-color: #374083e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 40vw;
+    border-radius: 8px;
+    margin-top: 150px;
+}
+
+.pagina_inicial h3{
+    font-family: 'Neucha', cursive;
+    margin-bottom: 0;
+}
+
+.pagina_inicial h1{
+    font-family: 'Bangers', cursive;
+    font-size: 50pt;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pagina_inicial button{
+    background-color: #0CE895;
+    border-color: #0CE895;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Neucha', cursive;
+    font-size: 13pt;
+    height: 5vh;
+    width: 8vw;
+    margin: 6px 6px;
+}
+
+.pagina_inicial button:hover{
+    cursor: pointer;
+    background-color: #8186FF;
+    border-color: #8186FF;
+}
+
+
+
+
